@@ -1,0 +1,155 @@
+{
+  "assets": [
+    {
+      "repo": "deepseek-ai/Janus-Pro-1B",
+      "revision": "960ab33191f61342a4c60ae74d8dc356a39fafcb",
+      "target": "models/januspro/Janus-Pro-1B",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 2549
+        },
+        {
+          "path": "config.json",
+          "bytes": 1455
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 346
+        },
+        {
+          "path": "processor_config.json",
+          "bytes": 210
+        },
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 4178890389
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 344
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 4718799
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 285
+        }
+      ]
+    },
+    {
+      "repo": "showlab/show-o2-1.5B",
+      "revision": "07ec16589d4fc5422a74dddbbc4b2cd11e551039",
+      "target": "models/showo2/show-o2-1.5B",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 5759
+        },
+        {
+          "path": "config.json",
+          "bytes": 534
+        },
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 5661862314
+        }
+      ]
+    },
+    {
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "target": "models/showo2/Qwen2.5-1.5B-Instruct",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 11343
+        },
+        {
+          "path": "README.md",
+          "bytes": 4917
+        },
+        {
+          "path": "config.json",
+          "bytes": 660
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 242
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671839
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 3087467144
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 7031645
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 7305
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833
+        }
+      ]
+    },
+    {
+      "repo": "google/siglip-so400m-patch14-384",
+      "revision": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3",
+      "target": "models/showo2/siglip-so400m-patch14-384",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 4321
+        },
+        {
+          "path": "config.json",
+          "bytes": 576
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 3511950624
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 368
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 409
+        },
+        {
+          "path": "spiece.model",
+          "bytes": 798330
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 2399357
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 711
+        }
+      ]
+    },
+    {
+      "repo": "Wan-AI/Wan2.1-T2V-14B",
+      "revision": "a064a6c71f5be440641209c07bf2a5ce7a2ff5e4",
+      "target": "models/showo2/wan",
+      "files": [
+        {
+          "path": "Wan2.1_VAE.pth",
+          "bytes": 507609880
+        }
+      ]
+    }
+  ]
+}

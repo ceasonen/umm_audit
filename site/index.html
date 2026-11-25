@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Adapted from Stellar by HTML5 UP, CC BY 3.0. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore paired evaluations of visual question answering and image generation across six unified multimodal models.">
+  <meta name="theme-color" content="#241e49">
+  <title>Auditing Transfer from Visual QA to Image Generation</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+  <script defer src="assets/js/jquery.min.js"></script>
+  <script defer src="assets/js/jquery.scrollex.min.js"></script>
+  <script defer src="assets/js/jquery.scrolly.min.js"></script>
+  <script defer src="assets/js/browser.min.js"></script>
+  <script defer src="assets/js/breakpoints.min.js"></script>
+  <script defer src="assets/js/util.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/results.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="wrapper">
+    <header id="header" class="alt project-header">
+      <h1>Auditing Transfer from Visual QA to Image Generation</h1>
+      <a class="project-author" href="https://ceasonen.github.io/">Cheng Chen</a>
+      <p>Paired counting and spatial evaluations across six unified multimodal models.</p>
+      <ul class="actions special hero-actions">
+        <li><a href="#results" class="button primary">Explore results</a></li>
+        <li><a href="audit/" class="button">Try the scoring demo</a></li>
+      </ul>
+    </header>
+    <nav id="nav" aria-label="Project sections">
+      <ul>
+        <li><a href="#overview" class="active">Overview</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#code">Code</a></li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section id="overview" class="main">
+        <div class="overview">
+          <div>
+            <header class="major"><h2>When a model learns to answer</h2></header>
+            <p>When a unified model improves at answering visual questions, what changes in the images it generates? The audit compares both abilities across six models. It holds the generation prompt and noise fixed so that changes can be attributed to the update being tested.</p>
+            <p class="overview-note">The two outputs use the same request. The second borrows only the learned conditioning change from a request with a different count.</p>
+          </div>
+          <div class="output-pair">
+            <figure>
+              <img src="images/original-update.webp" width="512" height="512" alt="Generated illustration of trucks on a road, using its own conditioning update">
+              <figcaption><strong>Own update</strong><span>Request · four trucks</span></figcaption>
+            </figure>
+            <figure>
+              <img src="images/donor-update.webp" width="512" height="512" alt="Generated illustration of trucks on the same road, using the update from a six-truck request">
+              <figcaption><strong>Donor update</strong><span>Borrowed from · six trucks</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="method" class="main special">
+        <header class="major"><h2>What the audit measures</h2></header>
+        <ul class="features method">
+          <li>
+            <h3>Image-grounded answers</h3>
+            <p>Compare answers on intact, blank and permuted inputs to test whether gains depend on visual evidence.</p>
+          </li>
+          <li>
+            <h3>Changes in generation</h3>
+            <p>Train a removable low-rank update on visual question answering, then switch it on and off with identical prompts and noise.</p>
+          </li>
+          <li>
+            <h3>Attribute transfer</h3>
+            <p>Swap in a norm-matched update from a different prompt. Score the image against both the original and donor attributes.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="results" class="main">
+        <header class="major"><h2>Compare six backbones</h2></header>
+        <p>With BLIP3-o, activating the update improved counting answers by 4.98 percentage points while the counting image score fell by 0.89 points on a 100× scale. The explorer shows how these changes varied across models and tasks.</p>
+        <div class="results-toolbar">
+          <label for="comparison">Comparison
+            <select id="comparison" disabled>
+              <option value="endpoints">Trained vs. frozen</option>
+              <option value="swaps">Donor swap vs. own update</option>
+            </select>
+          </label>
+          <label for="task">Task
+            <select id="task" disabled>
+              <option value="counting">Counting</option>
+              <option value="spatial">Spatial</option>
+            </select>
+          </label>
+          <a class="button" href="data/results.csv" download>Download all results (CSV)</a>
+        </div>
+        <p id="result-status" role="status"></p>
+        <noscript><p>Download the CSV above to browse the results with JavaScript disabled.</p></noscript>
+        <div id="result-table" class="table-wrapper" hidden>
+          <table>
+            <caption id="result-caption"></caption>
+            <thead id="result-head"></thead>
+            <tbody id="result-body"></tbody>
+          </table>
+        </div>
+        <p id="result-note" class="measurement-note"></p>
+      </section>
+      <section id="code" class="main special">
+        <header class="major"><h2>Explore the implementation</h2></header>
+        <p>Read the adapter, source controls and conditioning swaps, or score the example outputs yourself. The scoring demo saves drafts in this browser and exports your observations as CSV.</p>
+        <ul class="actions special">
+          <li><a href="https://github.com/ceasonen/umm_audit" class="button primary">View source on GitHub</a></li>
+          <li><a href="audit/" class="button">Open the demo</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer" class="project-footer">
+      <p class="copyright"><a href="https://ceasonen.github.io/">Cheng Chen</a> · Design adapted from <a href="https://html5up.net/stellar">Stellar by HTML5 UP</a> under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>

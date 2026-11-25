@@ -1,0 +1,38 @@
+{
+  "geneval": {
+    "repository": "https://github.com/djghosh13/geneval.git",
+    "commit": "af4902f24d3ca90ebbb446dd9891a59e0f82725f"
+  },
+  "spatialgeneval": {
+    "repository": "https://github.com/AMAP-ML/SpatialGenEval.git",
+    "commit": "8b294b5fd0bca204fcfbf2cd74b75d9c359e40f6"
+  },
+  "t2i_compbench": {
+    "repository": "https://github.com/Karine-Huang/T2I-CompBench.git",
+    "commit": "1b7094991a57f3c22abdd4f6e8ba6c1a15517073"
+  },
+  "conceptmix": {
+    "repository": "https://github.com/princetonvisualai/conceptmix.git",
+    "commit": "d0113e15d0b1c9fad027f632c6fb42807d3a5184"
+  },
+  "dsg": {
+    "repository": "https://github.com/j-min/DSG.git",
+    "commit": "7330119a39f76ff90e619a8bd3ff321e71aa986b"
+  },
+  "strict": {
+    "repository": "https://github.com/tianyu-z/STRICT-Bench.git",
+    "commit": "921ddb182fe4609c709a2ca3f8f155b0000b0920"
+  },
+  "wise_verified": {
+    "repository": "https://github.com/PKU-YuanGroup/WISE.git",
+    "commit": "09b5539d64681bf11102fc5c87e63a387beaf71d"
+  },
+  "anytext": {
+    "repository": "https://github.com/tyxsspa/AnyText.git",
+    "commit": "3d4a260c67d92c0e27d6e18ed69990e19a40de6d"
+  },
+  "wegenbench_text": {
+    "repository": "https://github.com/WeChatCV/WeGenBench.git",
+    "commit": "87c3c76e2fb7b6f5551b2e5e7f514b297a60a1a4"
+  }
+}

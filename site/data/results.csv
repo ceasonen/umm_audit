@@ -1,0 +1,7 @@
+backbone,runs,counting_answer_pp,counting_image_100x,spatial_answer_pp,spatial_image_100x,counting_recipient_pp,counting_donor_pp,spatial_recipient_100x,spatial_donor_100x
+BLIP3-o,4,4.98,-0.89,1.51,0.41,4.88,-0.59,0.47,1.76
+JanusFlow,4,-1.76,0.44,-2.20,-0.01,2.73,-2.73,-0.42,-0.50
+UniWorld-V1,4,-2.08,-0.12,0.93,-0.04,0.39,0.59,0.20,-0.41
+DiMOO,1,-0.59,0.32,0.00,1.04,-0.78,-5.47,-1.37,-0.05
+Janus-Pro,1,0.00,-2.16,0.98,0.87,-1.56,3.91,2.15,-0.57
+Show-o2,1,10.64,-0.24,2.34,-0.59,-0.78,-0.78,0.55,-0.58

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Adapted from Stellar by HTML5 UP, CC BY 3.0. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Score two example outputs from the UMM Audit evaluation.">
+  <title>Scoring Demo · UMM Audit</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/project.css">
+  <script defer src="audit-core.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header" class="alt project-header audit-header">
+      <a class="project-author" href="../">← Back to the project</a>
+      <h1>Scoring demo</h1>
+      <p>Evaluate two generated images using the audit’s counting rubric.</p>
+    </header>
+    <main id="main">
+      <section class="main">
+        <div class="audit-progress"><strong id="progress" aria-live="polite"></strong><progress id="bar" aria-label="Images scored"></progress></div>
+        <div class="audit-grid">
+          <figure>
+            <img id="image" width="512" height="512" alt="Generated image to score">
+            <figcaption id="item"></figcaption>
+          </figure>
+          <div class="audit-form">
+            <p>Target object · <strong id="objects"></strong></p>
+            <div id="questions"></div>
+            <label for="notes">Notes</label>
+            <textarea id="notes" rows="2" placeholder="Describe any ambiguity you see."></textarea>
+            <p id="message" aria-live="polite"></p>
+            <div class="audit-actions">
+              <button class="button" id="prev">Previous</button>
+              <button class="button" id="next">Next</button>
+              <button class="button primary" id="export" disabled>Export ratings (CSV)</button>
+            </div>
+          </div>
+        </div>
+        <div class="audit-actions">
+          <button class="button small" id="missing">Go to unfinished image</button>
+          <button class="button small" id="backup">Save draft file</button>
+          <button class="button small" id="restore">Import draft</button>
+          <input type="file" id="draft" accept=".json,application/json" hidden>
+        </div>
+        <p class="measurement-note">Ratings stay in your browser. Export a draft to move your work to another device.</p>
+        <noscript><p>Enable JavaScript to score the images.</p></noscript>
+      </section>
+    </main>
+    <footer id="footer" class="project-footer">
+      <p class="copyright">Design adapted from <a href="https://html5up.net/stellar">Stellar by HTML5 UP</a> under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "endpoint": "https://hf-mirror.com",
+  "assets": [
+    {
+      "group": "janusflow",
+      "role": "unified_backbone",
+      "repo_id": "deepseek-ai/JanusFlow-1.3B",
+      "revision": "ba759449ee790649850a00d39caddb0acf1c9132",
+      "target": "models/janusflow/JanusFlow-1.3B"
+    },
+    {
+      "group": "janusflow",
+      "role": "vae",
+      "repo_id": "stabilityai/sdxl-vae",
+      "revision": "6f5909a7e596173e25d4e97b07fd19cdf9611c76",
+      "target": "models/janusflow/sdxl-vae"
+    },
+    {
+      "group": "dimoo",
+      "role": "unified_backbone",
+      "repo_id": "Alpha-VLLM/Lumina-DiMOO",
+      "revision": "f014549e17679e41b119959754cdd9320af9bdc8",
+      "target": "models/dimoo/Lumina-DiMOO"
+    },
+    {
+      "group": "blip3o",
+      "role": "unified_backbone",
+      "repo_id": "BLIP3o/BLIP3o-Model-4B",
+      "revision": "5af652f9d947d4128c6fdf9ebad470e17f067fc2",
+      "target": "models/blip3o/BLIP3o-Model-4B"
+    },
+    {
+      "group": "blip3o",
+      "role": "processor",
+      "repo_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "target": "models/blip3o/Qwen2.5-VL-7B-Instruct-processor",
+      "allow_patterns": [
+        "chat_template.json",
+        "preprocessor_config.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "merges.txt",
+        "vocab.json"
+      ]
+    },
+    {
+      "group": "uniworld_v1",
+      "role": "unified_backbone",
+      "repo_id": "LanguageBind/UniWorld-V1",
+      "revision": "67579496ea73fbfc1a0354ddf792cce14191999e",
+      "target": "models/uniworld_v1/UniWorld-V1"
+    },
+    {
+      "group": "uniworld_v1",
+      "role": "visual_encoder",
+      "repo_id": "google/siglip2-so400m-patch16-512",
+      "revision": "ceea1cba8130d8271436da4828633198c176a775",
+      "target": "models/uniworld_v1/siglip2-so400m-patch16-512"
+    },
+    {
+      "group": "evaluators",
+      "role": "spatialgeneval_qwen72_awq_four_gpu_replication",
+      "repo_id": "Qwen/Qwen2.5-VL-72B-Instruct-AWQ",
+      "revision": "c8b87d4b81f34b6a147577a310d7e75f0698f6c2",
+      "target": "models/evaluators/Qwen2.5-VL-72B-Instruct-AWQ"
+    },
+    {
+      "group": "evaluators_exact",
+      "role": "spatialgeneval_qwen72_bf16_official_judge",
+      "repo_id": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "revision": "89c86200743eec961a297729e7990e8f2ddbc4c5",
+      "target": "models/evaluators/Qwen2.5-VL-72B-Instruct"
+    },
+    {
+      "group": "uniworld_v2",
+      "role": "qwen_image_edit_backbone",
+      "repo_id": "Qwen/Qwen-Image-Edit-2509",
+      "revision": "d3968ef930e841f4c73640fb8afa3b306a78167e",
+      "target": "models/uniworld_v2/Qwen-Image-Edit-2509"
+    },
+    {
+      "group": "uniworld_v2",
+      "role": "qwen_image_edit_adapter",
+      "repo_id": "chestnutlzj/Edit-R1-Qwen-Image-Edit-2509",
+      "revision": "6f58a70502ea6560da338c5af91d7a3d156077ee",
+      "target": "models/uniworld_v2/Edit-R1-Qwen-Image-Edit-2509"
+    },
+    {
+      "group": "uniworld_v2",
+      "role": "flux_kontext_adapter",
+      "repo_id": "chestnutlzj/Edit-R1-FLUX.1-Kontext-dev",
+      "revision": "8445e415c9b4dcb107861d44013e89adb9bc4805",
+      "target": "models/uniworld_v2/Edit-R1-FLUX.1-Kontext-dev"
+    },
+    {
+      "group": "runtime_fallbacks",
+      "role": "uniworld_v1_quantized_backbone",
+      "repo_id": "wikeeyang/UniWorld-V1-NF4",
+      "revision": "dc8eb00b61b3c5d71a2f99bddb63cadb53a7f098",
+      "target": "models/uniworld_v1/UniWorld-V1-NF4"
+    },
+    {
+      "group": "runtime_fallbacks",
+      "role": "uniworld_v1_quantized_diffusion_backbone",
+      "repo_id": "diffusers/FLUX.1-dev-bnb-4bit",
+      "revision": "27114c0933fb58aea21f707e113c25e8c6558487",
+      "target": "models/uniworld_v1/FLUX.1-dev-bnb-4bit"
+    },
+    {
+      "group": "runtime_fallbacks",
+      "role": "uniworld_v2_quantized_kontext_backbone",
+      "repo_id": "eramth/flux-kontext-4bit",
+      "revision": "0915655a7f4a219fcc8fd97df24efb313fde1d89",
+      "target": "models/uniworld_v2/flux-kontext-4bit"
+    }
+  ]
+}
