@@ -1,4 +1,4 @@
-# Auditing Transfer from Visual QA to Image Generation
+# Transfer Audit
 
 UMM Audit examines how a removable update trained on visual question answering affects image generation in six unified multimodal models. It measures whether answering gains depend on the input image, whether activating the update changes generation, and whether swapping in the update from a different prompt transfers its attributes.
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore paired evaluations of visual question answering and image generation across six unified multimodal models.">
   <meta name="theme-color" content="#241e49">
-  <title>Auditing Transfer from Visual QA to Image Generation</title>
+  <title>Transfer Audit</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/project.css">
   <script defer src="assets/js/jquery.min.js"></script>
@@ -22,9 +22,9 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="wrapper">
     <header id="header" class="alt project-header">
-      <h1>Auditing Transfer from Visual QA to Image Generation</h1>
+      <h1>Transfer Audit</h1>
       <a class="project-author" href="https://ceasonen.github.io/">Cheng Chen</a>
-      <p>Paired counting and spatial evaluations across six unified multimodal models.</p>
+      <p>From visual question answering to image generation</p>
       <ul class="actions special hero-actions">
         <li><a href="#results" class="button primary">Explore results</a></li>
         <li><a href="audit/" class="button">Try the scoring demo</a></li>
@@ -42,8 +42,8 @@
       <section id="overview" class="main">
         <div class="overview">
           <div>
-            <header class="major"><h2>When a model learns to answer</h2></header>
-            <p>When a unified model improves at answering visual questions, what changes in the images it generates? The audit compares both abilities across six models. It holds the generation prompt and noise fixed so that changes can be attributed to the update being tested.</p>
+            <header class="major"><h2>Does learning to answer change what a model draws?</h2></header>
+            <p>We compare counting and spatial reasoning across six unified multimodal models. We hold the generation prompt and noise fixed to isolate the effect of each conditioning update.</p>
             <p class="overview-note">The two outputs use the same request. The second borrows only the learned conditioning change from a request with a different count.</p>
           </div>
           <div class="output-pair">
